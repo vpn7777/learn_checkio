@@ -1,0 +1,58 @@
+<h2>Excel Column Number</h2>
+<!-- Describe task in general -->
+<p>
+    Given a string that represents the column title as appears in an Excel sheet, return its corresponding column number.
+</p>
+<p>
+    But how does the Excel column numbering actually work? Well, the column number is like decimal number, but with base (radix) <b>26</b> and "digits" <b>A-Z</b>. <a href="https://en.wikipedia.org/wiki/Radix" target="_blank">Read more about number bases</a>. Let's look at the exact numbers:
+</p>
+<pre>
+Excel   Decimal
+    A   1
+   ..
+    Z   26
+</pre>
+<p>The 1-"digit" numbers have ended. 2-"digits" numbers start from double first "digit" and go to double last one:</p>
+<pre>
+Excel   Decimal
+    A   1
+   ..
+    Z   26
+   AA   27
+   ..
+   AZ   52
+   BA   53
+   ..
+   BZ   78
+   CA   79
+   ..
+   ..
+   ZZ   702
+</pre>
+<p>Now it's turn for 3-"digit" numbers...</p>
+<!-- Explain input and output values -->
+<p>
+<strong>Input:</strong> String.
+</p>
+<p>
+<strong>Output:</strong> Integer. 
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Examples:</strong>
+</p>
+<pre class="brush: python">assert column_number(&quot;A&quot;) == 1
+assert column_number(&quot;Z&quot;) == 26
+assert column_number(&quot;AB&quot;) == 28
+assert column_number(&quot;ZY&quot;) == 701
+</pre>
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+<strong>Precondition:</strong>
+<i>Non empty, only upper case, only English letters</i>
+</p>
+</div>
+
+<p><a href="https://py.checkio.org/en/mission/excel-column-number">See the task on CheckiO</a></p>

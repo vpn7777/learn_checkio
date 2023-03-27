@@ -1,0 +1,46 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |
+    def is_all_upper(text: str) -> bool:
+        # your code here
+        return False
+
+
+    print("Example:")
+    print(is_all_upper("ALL UPPER"))
+
+    # These "asserts" are used for self-checking
+    assert is_all_upper("ALL UPPER") == True
+    assert is_all_upper("all lower") == False
+    assert is_all_upper("mixed UPPER and lower") == False
+    assert is_all_upper("") == True
+    assert is_all_upper("444") == True
+    assert is_all_upper("55 55 5 ") == True
+
+    print("The mission is done! Click 'Check Solution' to earn rewards!")
+  learner_created: false
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Tue, 21 Mar 2023 07:41:29 UTC"
+code: |
+  def is_all_upper(text: str) -> bool:
+      # your code here
+      return False
+
+
+  print("Example:")
+  print(is_all_upper("ALL UPPER"))
+
+  # These "asserts" are used for self-checking
+  assert is_all_upper("ALL UPPER") == True
+  assert is_all_upper("all lower") == False
+  assert is_all_upper("mixed UPPER and lower") == False
+  assert is_all_upper("") == True
+  assert is_all_upper("444") == True
+  assert is_all_upper("55 55 5 ") == True
+
+  print("The mission is done! Click 'Check Solution' to earn rewards!")
+seconds_from_change: 9223372036854775807

@@ -1,0 +1,39 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |
+    def correct_sentence(text: str) -> str:
+        # your code here
+        return text[0].upper() + text[1:] if text[-1] == '.' else text[0].upper() + text[1:] + '.'
+
+
+    print("Example:")
+    print(correct_sentence("greetings, friends"))
+
+    # These "asserts" are used for self-checking
+    assert correct_sentence("greetings, friends") == "Greetings, friends."
+    assert correct_sentence("Greetings, friends") == "Greetings, friends."
+    assert correct_sentence("Greetings, friends.") == "Greetings, friends."
+    assert correct_sentence("greetings, friends.") == "Greetings, friends."
+
+    print("The mission is done! Click 'Check Solution' to earn rewards!")
+  learner_created: false
+status: Solved
+code: |
+  def correct_sentence(text: str) -> str:
+      # your code here
+      return text[0].upper() + text[1:] if text[-1] == '.' else text[0].upper() + text[1:] + '.'
+
+
+  print("Example:")
+  print(correct_sentence("greetings, friends"))
+
+  # These "asserts" are used for self-checking
+  assert correct_sentence("greetings, friends") == "Greetings, friends."
+  assert correct_sentence("Greetings, friends") == "Greetings, friends."
+  assert correct_sentence("Greetings, friends.") == "Greetings, friends."
+  assert correct_sentence("greetings, friends.") == "Greetings, friends."
+
+  print("The mission is done! Click 'Check Solution' to earn rewards!")
+seconds_from_change: 326336
